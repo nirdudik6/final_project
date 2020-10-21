@@ -126,6 +126,7 @@ def install_jenkins():
         username=input("enter your username:\n")
         ip=input("enter your ip address:\n")
         os.system('scp jenkins.sh ' + username + '@' + ip + ':/home/' + username)
+        print("Run jenkins.sh!")
         os.system('ssh ' + username + '@' + ip)
         print("done!")
     else:
