@@ -2,6 +2,10 @@
 
 
 echo "welcome to job3"
+echo "lets install docker!"
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+echo "docker has installed!"
 echo -e "how many containers do you want to create?\n"
 read CONTAINERS
 for i in $( eval echo {1..$CONTAINERS} )
